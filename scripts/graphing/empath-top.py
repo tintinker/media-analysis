@@ -3,14 +3,13 @@ import matplotlib.pyplot as plt
 from scripts.combine import combine
 from empath import Empath
 from heapq import nlargest
+from scripts.graphing import common
 
 #to call directly: python3 -m scripts.graphing.empath-basic
 if __name__ == '__main__':
-    lexicon = Empath()
+    DATA_PATHS, LABELS, NUM_METRICS = common.get_empath_options("empath top")
 
-    DATA_PATHS = ['./articles/2018/byrace/A', './articles/2018/byrace/B', './articles/2018/byrace/W', './articles/2018/byrace/H']
-    LABELS = ['Asian', 'Black', 'White', 'Hispanic']
-    NUM_METRICS = 7
+    lexicon = Empath()
 
     reports = [lexicon.analyze(combine(data_path), normalize=True) for data_path in DATA_PATHS]
 
