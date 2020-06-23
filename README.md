@@ -1,6 +1,6 @@
 # media-analysis
 
-## Quick Start 
+## Chrome Extension Quick Start 
 1. Drag the `chrome-extension` folder onto the page at chrome://extensions to install (nice gif / instructions here: [https://blog.lateral.io/2016/04/create-chrome-extension-modify-websites-html-css/](https://blog.lateral.io/2016/04/create-chrome-extension-modify-websites-html-css/)
 2. Go to EC2 on AWS: [https://us-east-2.console.aws.amazon.com/ec2/v2/home?region=us-east-2#Instances:sort=instanceState](https://us-east-2.console.aws.amazon.com/ec2/v2/home?region=us-east-2#Instances:sort=instanceState) 
 3. Click Actions -> Instance State -> Start
