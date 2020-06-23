@@ -29,6 +29,7 @@ def annotate(headline):
 @cross_origin()
 def welcome():
     return "Welcome! The server is live! \n Usage: \n /analyze/headline/simple?q=barack+obama+is+from+hawaii \n note that the first request after the ec2 instance is started will be slow"
+
 #returns full result of openie, token, and depparse nlp annotation
 #request syntax fetch("localhost:5000/analyze/headline?q=barack+obama+is+from+hawaii")
 @app.route("/analyze/headline")
