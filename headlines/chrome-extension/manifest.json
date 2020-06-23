@@ -3,7 +3,7 @@
    
     "name": "Add NLP to News",
     "version": "0.1.0",
-    "description": "Justin Test Stuff",
+    "description": "Uses Stanford Core NLP to document active/passive voice and openie on google news",
    
     "content_scripts": [{
       "js": ["jquery-3.5.1.min.js", "content.js"],
