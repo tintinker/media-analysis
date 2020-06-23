@@ -17,7 +17,7 @@ def annotate(headline):
     #TODO: add error checking here (return status 500 if nlp not running)
     nlp = StanfordCoreNLP('http://localhost:9000')
     
-    return = nlp.annotate(headline, properties={
+    return nlp.annotate(headline, properties={
         #these annoators must be a subset of the ones used when starting the core nlp server in setup.sh
         #TODO: move this list of annoators to a config file to ensure the same ones are used here and in setup.sh
         'annotators': 'tokenize,openie,depparse',
@@ -62,3 +62,5 @@ def extension_headline_simple():
     
     return json.dumps(result)
 
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=80, debug=True)

@@ -1,5 +1,5 @@
 const GOOGLE_NEWS_HEADLINE_SELECTOR = "a.DY5T1d"
-const HEADLINES_SERVER_REQUEST_URL = "http://localhost:5000/extension/headline/simple?q="
+const HEADLINES_SERVER_REQUEST_URL = "http://ec2-18-221-33-195.us-east-2.compute.amazonaws.com"
 const ENTER_BUTTON_KEY_CODE = 13
 
 let annotate_headlines = function() {
@@ -15,7 +15,7 @@ let annotate_headlines = function() {
         let original_headline_object = this
         
         //grap annotations from headlines backend
-        fetch(HEADLINES_SERVER_REQUEST_URL + headline_text)
+        fetch(HEADLINES_SERVER_REQUEST_URL + "/analyze/headline/simple?q="+headline_text)
         .then(response => response.json())
         .then(data => {
         
