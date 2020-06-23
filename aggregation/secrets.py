@@ -1,0 +1,1 @@
+subscription_key = "3e0a394a6bd340efa7141cb29e36a152"
